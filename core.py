@@ -27,9 +27,9 @@ def longest_word(text: str) -> str:
     splited = text.split()
     if not splited:
         raise ValueError
-    max, max_world = 0, ""
+    max, max_word = 0, ""
     for tok in splited:
         if len(tok) > max:
             max = len(tok)
-            max_world = tok
-    return max_world
+            max_word = tok
+    return max_word
